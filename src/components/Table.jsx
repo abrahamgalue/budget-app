@@ -2,7 +2,7 @@
 import ExpenseItem from './ExpenseItem'
 
 const Table = ({ expenses }) => {
-  const tableHeaders = ['Name', 'Amount', 'Date']
+  const tableHeaders = ['Name', 'Amount', 'Date', 'Budget', '']
 
   return (
     <div className='table'>
