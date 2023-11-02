@@ -1,8 +1,14 @@
 // component import
 import ExpenseItem from './ExpenseItem'
 
-const Table = ({ expenses }) => {
-  const tableHeaders = ['Name', 'Amount', 'Date', 'Budget', '']
+const Table = ({ expenses, showBudget = true }) => {
+  const tableHeaders = [
+    'Name',
+    'Amount',
+    'Date',
+    showBudget ? 'Budget' : '',
+    '',
+  ]
 
   return (
     <div className='table'>
@@ -17,7 +23,7 @@ const Table = ({ expenses }) => {
         <tbody>
           {expenses.map(expense => (
             <tr key={expense.id}>
-              <ExpenseItem expense={expense} />
+              <ExpenseItem expense={expense} showBudget={showBudget} />
             </tr>
           ))}
         </tbody>
