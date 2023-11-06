@@ -1,7 +1,7 @@
 // rrd imports
 import { Link, useFetcher } from 'react-router-dom'
 
-// library imports
+// library import
 import { TrashIcon } from '@heroicons/react/24/solid'
 
 // helper imports
@@ -29,7 +29,9 @@ const ExpenseItem = ({ expense, showBudget }) => {
         <td>
           <Link
             to={`/budget/${budget.id}`}
-            style={{ '--accent': budget.color }}
+            style={{
+              '--accent': budget.color,
+            }}
           >
             {budget.name}
           </Link>
@@ -51,5 +53,4 @@ const ExpenseItem = ({ expense, showBudget }) => {
     </>
   )
 }
-
 export default ExpenseItem
