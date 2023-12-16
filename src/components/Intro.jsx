@@ -3,9 +3,6 @@ import { Form } from 'react-router-dom'
 // library
 import { UserPlusIcon } from '@heroicons/react/24/solid'
 
-// assets
-import illustration from '../assets/illustration.jpg'
-
 export const Intro = () => {
   return (
     <div className='intro'>
@@ -24,7 +21,7 @@ export const Intro = () => {
             required
             placeholder='What is your name?'
             aria-label='Your Name'
-            autoComplete='given-name'
+            autoComplete='off'
           />
           <input type='hidden' name='_action' value='newUser' />
           <button type='submit' className='btn btn--dark'>
@@ -33,7 +30,6 @@ export const Intro = () => {
           </button>
         </Form>
       </div>
-      <img src={illustration} alt='Person with money' width={600} />
     </div>
   )
 }

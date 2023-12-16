@@ -37,6 +37,7 @@ const AddExpenseForm = ({ budgets }) => {
           <div className='grid-xs'>
             <label htmlFor='newExpense'>Expense Name</label>
             <input
+              autoComplete='off'
               type='text'
               name='newExpense'
               id='newExpense'

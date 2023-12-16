@@ -28,6 +28,7 @@ const AddBudgetForm = () => {
         <div className='grid-xs'>
           <label htmlFor='newBudget'>Budget Name</label>
           <input
+            autoComplete='off'
             type='text'
             name='newBudget'
             id='newBudget'
